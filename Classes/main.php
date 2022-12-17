@@ -79,7 +79,8 @@
     $objects = new RecursiveIteratorIterator(new DirectoryIterator("$path"), RecursiveIteratorIterator::SELF_FIRST);
     $fmt = new IntlDateFormatter( "fa-IR" ,IntlDateFormatter::FULL, IntlDateFormatter::FULL,
         'Asia/Tehran',IntlDateFormatter::TRADITIONAL , "yyyy/MM/dd");
-    //$iterator = new DirectoryIterator("../");
+    //$iterator = new DirectoryItera
+    tor("../");
     foreach ($objects as $fileinfo) {
         clearstatcache();
         //$filetype=$fileinfo->getExtension();
